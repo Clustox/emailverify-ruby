@@ -12,7 +12,7 @@ Quick start
 1) Add to your Gemfile or install locally
 
 ```ruby
-gem "emailverify", path: "/path/to/emailverify-gem"
+gem "emailverify", git: "https://github.com/Clustox/emailverify-ruby.git"
 ```
 
 
