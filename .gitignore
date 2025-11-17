@@ -1,0 +1,11 @@
+.bundle/
+.byebug_history
+/coverage
+.DS_Store
+.env
+/.yardoc
+/.cache
+/.idea
+vendor/bundle
+*.gem
+pkg
