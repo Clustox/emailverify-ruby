@@ -79,3 +79,8 @@ Security
 
 Contributing
 Pull requests welcome. Run tests with `bundle install && bundle exec rake`.
+
+## License
+
+Licensed under the [MIT](https://opensource.org/licenses/MIT) License — see the [LICENSE](./LICENSE) file for details.
+
