@@ -1,8 +1,9 @@
 # frozen_string_literal: true
+require_relative "lib/emailverify/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "emailverify"
-  spec.version       = Emailverify::VERSION rescue "0.1.0"
+  spec.version       = Emailverify::VERSION rescue "0.1.1"
   spec.authors       = ["Clustox"]
   spec.email         = ["support@emailverify.io"]
 

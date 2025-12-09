@@ -31,11 +31,11 @@ module Emailverify
       @request ||= Request.new(api_key: configuration.api_key, base_url: configuration.base_url, timeout: configuration.timeout)
     end
 
-    def validate(email:, endpoint: nil)
+    def validate(email, endpoint: nil)
       request.validate(email, endpoint: endpoint)
     end
 
-    def valid?(email:, endpoint: nil)
+    def valid?(email, endpoint: nil)
       request.valid?(email, endpoint: endpoint)
     end
 
