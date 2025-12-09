@@ -23,16 +23,15 @@ Emailverify.configure do |config|
   config.api_key = "YOUR_API_KEY"
 end
 
-request = Emailverify::Request.new
-result = request.validate("jane@example.com")
+result = Emailverify.validate("jane@example.com")
 
-if request.valid?("jane@example.com")
+if Emailverify.valid?("jane@example.com")
   puts "valid"
 else
   puts "invalid"
 end
 
-balance = request.check_balance # or client.check_balance(batch_id)
+balance = Emailverify.check_balance # or client.check_balance(batch_id)
 
 # Validate example (EmailVerify.io v1)
 # The gem will call:
@@ -47,11 +46,11 @@ balance = request.check_balance # or client.check_balance(batch_id)
 # Modern usage (Response objects)
 # The client now returns an `Emailverify::Response` wrapper with helper accessors.
 Emailverify.configure do |c|
-  c.apikey = ENV['EMAILVERIFY_API_KEY']
+  c.api_key = ENV['EMAILVERIFY_API_KEY']
 end
 
 # Module-level convenience
-resp = Emailverify.validate(email: 'jane@example.com')
+resp = Emailverify.validate('jane@example.com')
 puts resp.status            # => 'valid' (string)
 puts resp.sub_status        # => 'permitted' or nil
 puts resp.to_h              # => raw Hash if you need it
