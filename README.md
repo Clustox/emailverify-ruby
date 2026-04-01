@@ -1,13 +1,22 @@
-# Emailverify Ruby Gem
+# EmailVerify.io Ruby Gem [![Get API Key](https://img.shields.io/badge/Get-API%20Key-blue)](https://emailverify.io)
 
-emailverify is a small, object-oriented Ruby client for the EmailVerify.io API.
+🚀 Official Ruby client for EmailVerify.io — fast and accurate email verification API.
 
-Features
-- Simple configuration (only the API key is required by default)
-- Clean wrapper methods: validate, valid?, and check_balance
-- Abstracts HTTP details using Faraday
+- Validate emails in real-time
+- Detect disposable & risky emails
+- Improve email deliverability
+- Check account balance
 
-Quick start
+👉 Get free API key: https://emailverify.io
+
+## Why EmailVerify.io?
+
+- ⚡ Sub-second email verification
+- 🎯 High accuracy (SMTP-level checks)
+- 💰 Cost-effective vs competitors
+- 🔌 Easy integration across Ruby, PHP, Go, and .NET
+
+## Quick start
 
 1) Add to your Gemfile or install locally
 
